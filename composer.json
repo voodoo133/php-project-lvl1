@@ -1,0 +1,13 @@
+{
+    "name": "voodoo/php-project-lvl1",
+    "authors": [
+        {
+            "name": "Anton Okhrimenko",
+            "email": "voodoo_133@mail.ru"
+        }
+    ],
+    "require": {},
+    "bin": [
+      "bin/brain-games"
+    ]
+}
