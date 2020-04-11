@@ -20,6 +20,9 @@ jobs:
     steps:
     # Check-out repository under GitHub workspace
     - uses: actions/checkout@v2
+    - name: Install
+      # Install project
+      run: make install
     # Runs a single command using the runners shell
     - name: Run a linter
       run: make lint
