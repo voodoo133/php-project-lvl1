@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php  
+
+require_once "../vendor/autoload.php";
+
+use function BrainGames\Games\even\run;
+
+run();
+
+?>
