@@ -1,7 +1,14 @@
 #!/usr/bin/env php
 <?php  
 
-require_once 'vendor/autoload.php';
+$autoload_path_v1 = '../vendor/autoload.php';
+$autoload_path_v2 = "../../../autoload.php";
+
+if (file_exists($autoload_path_v1)) {
+    require_once $autoload_path_v1;
+} else {
+    require_once $autoload_path_v2;
+}
 
 use function BrainGames\Cli\run;
 
