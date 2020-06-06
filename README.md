@@ -2,9 +2,11 @@
 ![CI](https://github.com/voodoo133/php-project-lvl1/workflows/CI/badge.svg)
 <ul>
   <li>
+    <h3>Brain Even</h3>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-even.gif"><img src="/gif/brain-even.gif" alt="brain-even" style="max-width:100%;"></a>
   </li>
   <li>
+    <h3>Brain Calc</h3>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-calc.gif"><img src="/gif/brain-calc.gif" alt="brain-calc" style="max-width:100%;"></a>
   </li>
 </ul>
