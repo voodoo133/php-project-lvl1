@@ -9,5 +9,9 @@
     <h3>Brain Calc</h3>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-calc.gif"><img src="/gif/brain-calc.gif" alt="brain-calc" style="max-width:100%;"></a>
   </li>
+  <li>
+    <h3>Brain GCD</h3>
+    <a target="_blank" rel="noopener noreferrer" href="/gif/brain-gcd.gif"><img src="/gif/brain-gcd.gif" alt="brain-gcd" style="max-width:100%;"></a>
+  </li>
 </ul>
 
