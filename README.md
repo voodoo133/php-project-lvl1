@@ -13,5 +13,8 @@
     <h3>Brain GCD</h3>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-gcd.gif"><img src="/gif/brain-gcd.gif" alt="brain-gcd" style="max-width:100%;"></a>
   </li>
+  <li>
+    <h3>Brain Progression</h3>
+    <a target="_blank" rel="noopener noreferrer" href="/gif/brain-progression.gif"><img src="/gif/brain-progression.gif" alt="brain-progression" style="max-width:100%;"></a>
+  </li>
 </ul>
-
