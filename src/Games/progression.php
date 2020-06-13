@@ -20,7 +20,7 @@ function run()
             $progression[] = $progression[$i - 1] + $step;
         }
 
-        $correct_answer_key = mt_rand(1, count($progression));
+        $correct_answer_key = mt_rand(0, count($progression) - 1);
         $correct_answer = $progression[$correct_answer_key];
         $progression[$correct_answer_key] = '..';
 
