@@ -17,4 +17,8 @@
     <h3>Brain Progression</h3>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-progression.gif"><img src="/gif/brain-progression.gif" alt="brain-progression" style="max-width:100%;"></a>
   </li>
+  <li>
+    <h3>Brain Prime</h3>
+    <a target="_blank" rel="noopener noreferrer" href="/gif/brain-prime.gif"><img src="/gif/brain-prime.gif" alt="brain-prime" style="max-width:100%;"></a>
+  </li>
 </ul>
