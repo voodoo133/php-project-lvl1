@@ -2,43 +2,43 @@
 
 namespace BrainGames\Games\calc;
 
-use function BrainGames\game\startGame;
+use function BrainGames\game\playGame;
 
 function run()
 {
-    $start_msg = "What is the result of the expression?";
+    $startMsg = "What is the result of the expression?";
 
-    $get_game_data = function () {
+    $getGameData = function () {
         $a = mt_rand(1, 25);
         $b = mt_rand(1, 25);
 
         $operations = ['+', '-', '*'];
-        $op_key = array_rand($operations, 1);
-        $op = $operations[$op_key];
+        $operatorKey = array_rand($operations, 1);
+        $operation = $operations[$operatorKey];
 
-        $expression = "{$a} {$op} {$b}";
+        $question = "{$a} {$operation} {$b}";
 
-        $correct_answer = null;
+        $correctAnswer = null;
 
-        switch ($op) {
+        switch ($operation) {
             case '+':
-                $correct_answer = $a + $b;
+                $correctAnswer = $a + $b;
 
                 break;
 
             case '-':
-                $correct_answer = $a - $b;
+                $correctAnswer = $a - $b;
 
                 break;
 
             case '*':
-                $correct_answer = $a * $b;
+                $correctAnswer = $a * $b;
 
                 break;
         }
 
-        return [$expression, $correct_answer];
+        return [$question, $correctAnswer];
     };
 
-    startGame($start_msg, $get_game_data);
+    playGame($startMsg, $getGameData);
 }

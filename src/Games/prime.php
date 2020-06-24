@@ -2,25 +2,25 @@
 
 namespace BrainGames\Games\prime;
 
-use function BrainGames\game\startGame;
+use function BrainGames\game\playGame;
 
 function run()
 {
-    $start_msg = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
+    $startMsg = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 
-    $get_game_data = function () {
-        $num = mt_rand(0, 100);
-        $correct_answer = isPrime($num) ? "yes" : "no";
+    $getGameData = function () {
+        $question = mt_rand(0, 100);
+        $correctAnswer = isPrime($question) ? "yes" : "no";
 
-        return [$num, $correct_answer];
+        return [$question, $correctAnswer];
     };
 
-    startGame($start_msg, $get_game_data);
+    playGame($startMsg, $getGameData);
 }
 
 function isPrime($number)
 {
-    if ($number == 1) {
+    if ($number <= 1) {
         return false;
     }
     

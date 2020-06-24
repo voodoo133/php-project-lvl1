@@ -2,23 +2,23 @@
 
 namespace BrainGames\Games\gcd;
 
-use function BrainGames\game\startGame;
+use function BrainGames\game\playGame;
 
 function run()
 {
-    $start_msg = "Find the greatest common divisor of given numbers.";
+    $startMsg = "Find the greatest common divisor of given numbers.";
 
-    $get_game_data = function () {
+    $getGameData = function () {
         $a = mt_rand(1, 25);
         $b = mt_rand(1, 25);
 
         $question = "{$a} {$b}";
-        $correct_answer = getGCD($a, $b);
+        $correctAnswer = getGCD($a, $b);
 
-        return [$question, $correct_answer];
+        return [$question, $correctAnswer];
     };
 
-    startGame($start_msg, $get_game_data);
+    playGame($startMsg, $getGameData);
 }
 
 function getGCD($a, $b)

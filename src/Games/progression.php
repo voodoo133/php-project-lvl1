@@ -2,32 +2,39 @@
 
 namespace BrainGames\Games\progression;
 
-use function BrainGames\game\startGame;
+use function BrainGames\game\playGame;
 
 DEFINE('PROGRESSION_LENGTH', 10);
 
 function run()
 {
-    $start_msg = "What number is missing in the progression?";
+    $startMsg = "What number is missing in the progression?";
 
-    $get_game_data = function () {
-        $initial_num = mt_rand(1, 10);
+    $getGameData = function () {
+        $initialNum = mt_rand(1, 10);
         $step = mt_rand(1, 5);
 
-        $progression = [$initial_num];
+        $progression = generateProgression($initialNum, $step);
 
-        for ($i = 1; $i < PROGRESSION_LENGTH; $i++) {
-            $progression[] = $progression[$i - 1] + $step;
-        }
-
-        $correct_answer_key = mt_rand(0, count($progression) - 1);
-        $correct_answer = $progression[$correct_answer_key];
-        $progression[$correct_answer_key] = '..';
+        $correctAnswerKey = array_rand($progression, 1);
+        $correctAnswer = $progression[$correctAnswerKey];
+        $progression[$correctAnswerKey] = '..';
 
         $question = join(" ", $progression);
 
-        return [$question, $correct_answer];
+        return [$question, $correctAnswer];
     };
 
-    startGame($start_msg, $get_game_data);
+    playGame($startMsg, $getGameData);
+}
+
+function generateProgression($initialNum, $step)
+{
+    $progression = [];
+
+    for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
+        $progression[] = $initialNum + $i * $step;
+    }
+
+    return $progression;
 }

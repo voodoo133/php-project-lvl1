@@ -2,43 +2,40 @@
 
 namespace BrainGames\game;
 
-DEFINE("NUM_ROUNDS", 3);
+DEFINE("NUM_OF_ROUNDS", 3);
 
 use function cli\line;
 use function cli\prompt;
 
-function startGame($start_msg, $get_game_data)
+function playGame($startMsg, $getGameData)
 {
     line("Welcome to the Brain Games!");
-    line($start_msg);
+    line($startMsg);
     line("\n");
 
     $name = prompt("May I have your name?");
     line("Hello, %s!", $name);
     line("\n");
 
-    $right_answers_amount = 0;
+    $rightAnswersAmount = 0;
 
-    while (1) {
-        list($question, $correct_answer) = $get_game_data();
+    while ($rightAnswersAmount < NUM_OF_ROUNDS) {
+        list($question, $correctAnswer) = $getGameData();
 
         line("Question: {$question}");
         $answer = prompt("Your answer");
         $answer = trim($answer);
 
-        if ($answer == $correct_answer) {
+        if ($answer == $correctAnswer) {
             line("Correct!");
-
-            if (++$right_answers_amount === NUM_ROUNDS) {
-                line("Congratulations, {$name}!");
-
-                break;
-            }
+            $rightAnswersAmount++;
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correct_answer}'.");
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, {$name}!");
 
-            break;
+            return;
         }
     }
+
+    line("Congratulations, {$name}!");
 }
