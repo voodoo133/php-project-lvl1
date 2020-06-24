@@ -1,12 +1,14 @@
 <a href="https://codeclimate.com/github/voodoo133/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/eab4ec7228c42d00374f/maintainability" /></a>
 ![CI](https://github.com/voodoo133/php-project-lvl1/workflows/CI/badge.svg)
-<p>Brain Games is a simple package of CLI games.</p>
 <h1>Brain Games</h1>
+<p>Brain Games is a simple package of CLI games.</p>
 <h2>Installation</h2>
 <ul>
-  <li>install composer globally</li>
   <li>
-    install brain-games
+    <p>install composer globally</p>
+  </li>
+  <li>
+    <p>install brain-games</p>
     <code>composer global require voodoo133/php-project-lvl1</code>
   </li>
 </ul>
