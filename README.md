@@ -21,7 +21,7 @@
   </li>
   <li>
     <h3>Brain Calc</h3>
-    <p>Calculate expression</p>
+    <p>Calculate the expression</p>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-calc.gif"><img src="/gif/brain-calc.gif" alt="brain-calc" style="max-width:100%;"></a>
   </li>
   <li>
@@ -31,7 +31,7 @@
   </li>
   <li>
     <h3>Brain Progression</h3>
-    <p>Find the missing number of progression</p>
+    <p>Find the missing number of the progression</p>
     <a target="_blank" rel="noopener noreferrer" href="/gif/brain-progression.gif"><img src="/gif/brain-progression.gif" alt="brain-progression" style="max-width:100%;"></a>
   </li>
   <li>
