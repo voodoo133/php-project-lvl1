@@ -6,7 +6,7 @@ use function BrainGames\game\playGame;
 
 function run()
 {
-    $startMsg = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
+    $startMsg = 'Answer "yes" if the number is even, otherwise answer "no".';
 
     $getGameData = function () {
         $question = mt_rand(0, 100);

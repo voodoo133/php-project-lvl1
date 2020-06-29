@@ -6,7 +6,7 @@ use function BrainGames\game\playGame;
 
 function run()
 {
-    $startMsg = "What is the result of the expression?";
+    $startMsg = 'What is the result of the expression?';
 
     $getGameData = function () {
         $a = mt_rand(1, 25);
@@ -17,8 +17,6 @@ function run()
         $operation = $operations[$operatorKey];
 
         $question = "{$a} {$operation} {$b}";
-
-        $correctAnswer = null;
 
         switch ($operation) {
             case '+':

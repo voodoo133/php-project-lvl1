@@ -6,7 +6,7 @@ use function BrainGames\game\playGame;
 
 function run()
 {
-    $startMsg = "Find the greatest common divisor of given numbers.";
+    $startMsg = 'Find the greatest common divisor of given numbers.';
 
     $getGameData = function () {
         $a = mt_rand(1, 25);

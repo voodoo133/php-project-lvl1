@@ -8,7 +8,7 @@ DEFINE('PROGRESSION_LENGTH', 10);
 
 function run()
 {
-    $startMsg = "What number is missing in the progression?";
+    $startMsg = 'What number is missing in the progression?';
 
     $getGameData = function () {
         $initialNum = mt_rand(1, 10);
@@ -16,7 +16,7 @@ function run()
 
         $progression = generateProgression($initialNum, $step);
 
-        $correctAnswerKey = array_rand($progression, 1);
+        $correctAnswerKey = mt_rand(0, PROGRESSION_LENGTH - 1);
         $correctAnswer = $progression[$correctAnswerKey];
         $progression[$correctAnswerKey] = '..';
 

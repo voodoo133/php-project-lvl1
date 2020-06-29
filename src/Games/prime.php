@@ -6,7 +6,7 @@ use function BrainGames\game\playGame;
 
 function run()
 {
-    $startMsg = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
+    $startMsg = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
     $getGameData = function () {
         $question = mt_rand(0, 100);
